@@ -2,6 +2,7 @@
  * Created by igortsybulin on 18.09.16.
  */
 
+/*
 alert("Hello, we are looking for young stars!");
 
 var age = +prompt("How old are you?", '');
