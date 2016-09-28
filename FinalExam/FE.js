@@ -83,7 +83,7 @@ fortuneTeller();
 
  */
 
-
+/*
 function toBytes(size, unit) {
 
     var res = "";
@@ -109,7 +109,7 @@ console.log(toBytes(100, 'Gb'));
 console.log(toBytes(100, 'Tb'));
 
 
-
+*/
 /*
  Задача 4.
 
