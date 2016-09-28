@@ -13,8 +13,9 @@ if ((age >= 7 && age <= 10) || (age > 10 && height < 140)) {
 } else {
     alert("Go home!");
 }
+*/
 
-/*
+
  if (7 <= age <= 10) {
  alert("You are Ok!");
  } else if (age > 10 && height < 140) {
@@ -22,5 +23,4 @@ if ((age >= 7 && age <= 10) || (age > 10 && height < 140)) {
  } else {
  alert("Go home!");
  }
-*/
 
