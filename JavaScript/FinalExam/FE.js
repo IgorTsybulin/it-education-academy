@@ -15,7 +15,7 @@
  console.log(getNumbers(['a', '2', 'b', 3, 'c', '4'])); // [3]
 
  */
-
+/*
 
 function getNumbers(arr) {
     var arr2 = [];
@@ -31,7 +31,7 @@ function getNumbers(arr) {
 console.log(getNumbers([1, 'a', 2, 'b'])); // [1, 2]
 console.log(getNumbers(['ready', 'get', 'set', 10, 'go', 112])); // [10, 112]
 console.log(getNumbers(['a', '2', 'b', 3, 'c', '4'])); // [3]
-
+*/
 
 /*
  Задача 2.
@@ -83,7 +83,7 @@ fortuneTeller();
 
  */
 
-
+/*
 function toBytes(size, unit) {
 
     var res = "";
@@ -109,7 +109,7 @@ console.log(toBytes(100, 'Gb'));
 console.log(toBytes(100, 'Tb'));
 
 
-
+*/
 /*
  Задача 4.
 

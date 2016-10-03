@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>Методы объектов</title>
+</head>
+<body>
+
+  <h3>Смотрите в консоль!</h3>
+
+  <script>
+    "use strict";
+
+    /*
+      При объявлении объекта можно указать свойство-функцию.
+
+      Свойства-функции называют «методами» объектов. Их можно добавлять и удалять в любой момент, в том числе и явным присваиванием.
+     */
+    var user = {
+      name: 'Robert',
+
+      // объявление метода
+      sayHi: function() {
+        console.log( 'Hello!' );
+      }
+    };
+
+    // вызов метода
+    user.sayHi();
+
+    var admin = {
+      name: 'John'
+    };
+
+    admin.sayHi = function() {
+      console.log('Hello!');
+    };
+
+    // вызов метода
+    admin.sayHi();
+
+
+
+
+
+
+  </script>
+
+  <p>Конец документа</p>
+
+</body>
+</html>

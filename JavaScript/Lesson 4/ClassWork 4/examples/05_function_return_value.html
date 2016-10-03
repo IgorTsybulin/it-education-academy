@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>Возвращаемые значения</title>
+</head>
+<body>
+
+  <h3>Смотрите в консоль!</h3>
+
+  <script>
+    "use strict";
+
+    /*
+      Функция может возвратить результат, который будет передан в вызвавший её код.
+
+      Для возврата значения используется директива return.
+
+      Она может находиться в любом месте функции. Как только до неё доходит управление — функция завершается и значение передается обратно.
+
+      В случае, когда функция не вернула значение или return был без аргументов, считается что она вернула undefined.
+     */
+    function checkAge(age) {
+      if (age > 18) {
+        return true;
+      } else {
+        return confirm('Are parents ok with this?');
+      }
+    }
+
+    var age = prompt('Your age?');
+
+    if (checkAge(age)) {
+      alert( 'Access granted' );
+    } else {
+      alert( 'Access denied' );
+    }
+
+
+
+  </script>
+
+  <p>Конец документа</p>
+
+</body>
+</html>

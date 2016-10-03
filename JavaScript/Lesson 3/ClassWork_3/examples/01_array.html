@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>Массивы и работа с ними</title>
+</head>
+<body>
+
+  <h3>Смотрите в консоль!</h3>
+
+  <script>
+    "use strict";
+
+    /*
+      В программировании вообще:
+
+      Массив — набор однотипных элементов, расположенных в памяти непосредственно друг за другом, доступ к которым осуществляется по индексам.
+
+      В JavaScript’е:
+
+      Массив — разновидность объекта, которая предназначена для хранения пронумерованных значений и предлагает дополнительные методы для удобного манипулирования такой коллекцией.
+     */
+
+    var fruits = ["Apple", "Orange", "Plum"];
+    console.log('fruits', fruits);
+    alert(fruits);
+
+    /*
+     Для доступа к элементам используется индекс. Индексы начинаются с 0 (нуля).
+     */
+
+    console.log(fruits[0]); // Apple
+    console.log(fruits[1]); // Orange
+    console.log(fruits[2]); // Plum
+    console.log(fruits[3]); // undefined потому, что у нас нет такого элемента
+
+
+    console.log('-------------------------------------------------');
+
+
+    fruits[2] = 'Pear'; // now ["Apple", "Orange", "Pear"]
+    console.log('fruits[2] = \'Pear\';', fruits);
+
+    fruits[3] = 'Lemon'; // now ["Apple", "Orange", "Pear", "Lemon"]
+    console.log('fruits[3] = \'Lemon\';', fruits);
+
+    console.log('fruits.length', fruits.length); // 4
+
+    console.log('-------------------------------------------------');
+
+
+    /*
+      В массиве может храниться любое число элементов любого типа: строки, числа, объекты...
+     */
+
+    var arr = [ 1, 'String', { name: 'Ivan' }, true, [1, 2, 3, 4], null, undefined];
+
+    console.log( arr[2].name ); // Ivan
+
+    alert(arr); // 1,String,[object Object],true,1,2,3,4,,
+    console.log('Смешанные типы данных', arr);
+
+    console.log('-------------------------------------------------');
+
+
+    /*
+      Основные операции с массивами
+
+      C конца массива:
+
+        • pop — удаляет последний элемент из массива и возвращает его.
+        • push — добавляет элемент в конец массива.
+
+      С начала массива:
+        • shift — удаляет из массива первый элемент и возвращает его.
+        • unshift — добавляет элемент в начало массива.
+     */
+
+    console.log('\n-= pop =-');
+    console.log( fruits.pop() ); // "lemon"
+    console.log( fruits ); // ["Apple", "Orange", "Pear"]
+
+    console.log('\n-= push =-');
+    fruits.push("Lemon");
+    console.log( fruits ); // ["Apple", "Orange", "Pear", "Lemon"]
+
+    console.log('\n-= shift =-');
+    console.log( fruits.shift() ); // Apple
+    console.log( fruits ); // ["Orange", "Pear", "Lemon"]
+
+    console.log('\n-= unshift =-');
+    fruits.unshift("Apple");
+    console.log( fruits ); // ["Apple", "Orange", "Pear", "Lemon"]
+
+
+    console.log('-------------------------------------------------');
+
+  </script>
+
+  <p>Конец документа</p>
+
+</body>
+</html>
