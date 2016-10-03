@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>Методы: строка <-> массив</title>
+</head>
+<body>
+
+  <h3>Смотрите в консоль!</h3>
+
+  <script>
+    "use strict";
+
+    /*
+      split — разбивает строку по разделителю, превращая ее в массив.
+     */
+
+    var names = 'John, Jane, Rob, Kate, Mase, Rose, Bill';
+
+    var arr = names.split(', ');
+
+    for (var i = 0; i < arr.length; i++) {
+      console.log( 'Message sent to ' + arr[i] );
+    }
+
+
+    /*
+      Строка будет разбита по буквам, если разделитель будет пустой строкой.
+     */
+    console.log( "test".split('') ); // ["t", "e", "s", "t"]
+
+
+    /*
+      join — делает в точности противоположное split. Он берет массив и склеивает его в строку, используя разделитель.
+     */
+    var str = arr.join('; ');
+
+    console.log( str ); // John; Jane; Rob; Kate; Mase; Rose; Bill
+  </script>
+
+  <p>Конец документа</p>
+
+</body>
+</html>

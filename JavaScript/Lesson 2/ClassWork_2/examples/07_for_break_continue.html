@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>Оператор if</title>
+</head>
+<body>
+
+  <p>Начало документа...</p>
+
+  <script>
+    "use strict";
+
+    /*
+      Выйти из цикла можно не только при проверке условия но и, вообще, в любой момент. Эту возможность обеспечивает директива break.
+     */
+    var sum = 0;
+    while (true) {
+      var value = +prompt('Enter number', '');
+
+      if (!value) break;
+
+      sum += value;
+    }
+    alert(' Sum: ' + sum );
+
+
+
+    /*
+      Директива continue прекращает выполнение текущей итерации цикла.
+     */
+    for (var i = 0; i < 10; i++) {
+
+      if (i % 2 == 0) continue;
+
+      console.log(i);
+    }
+
+  </script>
+
+  <p>...Конец документа</p>
+
+</body>
+</html>
