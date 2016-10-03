@@ -96,3 +96,5 @@ function makeData() {
 }
 
 console.log(makeData());
+
+// hello Andrey
